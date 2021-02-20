@@ -1,0 +1,71 @@
+@import url(style.css);
+@import url(header.css);
+@import url(navigation.css);
+@import url(form.css);
+@import url(footer.css);
+.post {
+    margin: 1em auto;
+    width: 75%;
+    background-color: #8ee4af;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.img-post {
+    width: 100%;
+}
+
+.post-content {
+    padding-left: 1em;
+}
+
+.author>p {
+    margin: 0;
+    line-height: 0.5em;
+}
+
+.author>time {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: #05386b;
+}
+
+.aside-post {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+.author-img {
+    width: 30%;
+    border-radius: 50%;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #05386b;
+}
+
+.author-description {
+    margin: 0;
+    width: 70%;
+    text-decoration: underline;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .author-description {
+        width: 50%;
+    }
+}
+
+@media (min-width: 901px) {
+    .author-img {
+        width: 20%;
+        border-radius: 50%;
+    }
+    .author-description {
+        width: 40%;
+    }
+}

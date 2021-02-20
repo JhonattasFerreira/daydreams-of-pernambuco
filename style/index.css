@@ -1,0 +1,67 @@
+@import url(navigation.css);
+@import url(style.css);
+@import url(form.css);
+@import url(header.css);
+@import url(footer.css);
+.section {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    background-color: #8ee4af;
+    margin: 1em 0;
+    justify-content: space-between;
+}
+
+.img-post {
+    width: 100%;
+}
+
+.figcaption-content {
+    padding-left: 0.5em;
+}
+
+.card-content>p {
+    padding-left: 1em;
+}
+
+.card-content>h3 {
+    padding-left: 0.6em;
+    margin: auto 0;
+    font-size: 1.6em;
+    font-weight: 200;
+}
+
+.read-more-button {
+    margin: 0;
+    padding: 0.5em;
+    text-align: center;
+    background-color: #379386;
+    align-self: stretch;
+    font-size: 1em;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .section {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card {
+        width: 90%
+    }
+}
+
+@media (min-width: 901px) {
+    .section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card {
+        width: 90%
+    }
+}

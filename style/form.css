@@ -1,0 +1,21 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=email] {
+    border: 0.2em solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin: 0.5em 0;
+}
+
+input[type=submit] {
+    background-color: #379386;
+    color: white;
+    padding: 0.7em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+}
